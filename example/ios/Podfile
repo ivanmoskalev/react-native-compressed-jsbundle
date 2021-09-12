@@ -6,5 +6,4 @@ platform :ios, '10.0'
 target 'Example' do
   config = use_native_modules!
   use_react_native!(:path => config["reactNativePath"])
-  pod 'react-native-compressed-jsbundle', :path => '../..'
 end

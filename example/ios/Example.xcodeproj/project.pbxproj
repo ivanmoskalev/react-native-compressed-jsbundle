@@ -247,7 +247,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -eo pipefail\n\nexport NODE_BINARY=node\nexport FORCE_BUNDLING=true\n\n../node_modules/react-native/scripts/react-native-xcode.sh\n\nDEST=$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\nBUNDLE_FILE=\"$DEST/main.jsbundle\"\nrm \"$BUNDLE_FILE.br\" || true \nbrotli \"$BUNDLE_FILE\" \nmv \"$BUNDLE_FILE.br\" \"$BUNDLE_FILE\" \n";
+			shellScript = "set -eo pipefail\n\nexport NODE_BINARY=node\nexport FORCE_BUNDLING=true\n\n../node_modules/react-native/scripts/react-native-xcode.sh\n\n$NODE_BINARY ../node_modules/@ivanmoskalev/react-native-compressed-jsbundle/tool/compress.js \"$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/main.jsbundle\"\n";
 		};
 		4F0A6FC082772762E3E4C96C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
