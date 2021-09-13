@@ -21,8 +21,13 @@
         return;
     }
     
-    // TODO: we must actually validate the file here
     NSData *compressedData = [[NSData alloc] initWithContentsOfURL:sourceUrl options:NSDataReadingMappedIfSafe error:nil];
+    
+    if (!compressedData) {
+        FALLBACK_TO_DEFAULT_LOADER();
+        return;
+    }
+    
     NSData *decompressedData = IMOTryDecompressingBrotli(compressedData);
     
     if (!decompressedData) {
