@@ -34,9 +34,8 @@ Open your Xcode project and modify the React Native build phase (“Bundle React
 export NODE_BINARY=node
 ../node_modules/react-native/packager/react-native-xcode.sh
 
-# :: Add this line below ::
+# 1. Add this line at the bottom of the script.
 ../node_modules/react-native-compressed-jsbundle/tool/compress-xcode.sh 
-# :::::::::::::::::::::::::
 ```
 
 Open `AppDelegate.m` and add the following:
