@@ -23,4 +23,7 @@ jobs:
           scheme: ${{ matrix.target }}
           platform: ${{ 'iOS Simulator' }}
         run: |
-          xcodebuild test -scheme "$scheme"
+          set -eo pipefail
+          set -x
+          yarn install
+          cd example/ios && xcodebuild test -scheme "$scheme"
