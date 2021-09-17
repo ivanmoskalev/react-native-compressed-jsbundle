@@ -1,17 +1,69 @@
-# Ship compressed JS bundles 
-[Caution. Work in progress]
-Doctors hate him! Reduce your app's size with one simple trick.
+# Ship compressed JS bundles
 
-## Why?
-Sometimes you need a very small `.app`, for example if you are building an [App Clip](https://developer.apple.com/app-clips/). App Clips have to be strictly less than 10 MB in their _uncompressed_ form. 
+**Warning: not yet available for Android.**
 
-If you have already optimized image assets and got rid of native executable bloat, chances are, your `.jsbundle` is the largest file you have in your `.app`.
+Sometimes you need a very small `.app`, for example if you are building
+an [App Clip](https://developer.apple.com/app-clips/). (App Clips have to be strictly less than 10 MB in their _
+uncompressed_ form.)
 
-Why not `gzip` it and reduce its size roughly _in half_?
+When you distribute your React Native app, JavaScript code gets bundled into a `.jsbundle` file. It can get quite large.
 
-## How?
-`react-native-compressed-jsbundle` provides a custom `.jsbundle` loader that decompresses it on the fly and feeds the decompressed data to React Native. This is similar to what browsers do, ungzipping the resources before using them.
+This package allows you to compress your `.jsbundle` when you build the app for distribution. When the app is run, it
+automatically uncompresses the `.jsbundle` on the fly.
 
-## What's the catch?
-- You'll need to update the React Native's build script step in Xcode. This library will take care of that.
-- Your app startup time will probably take a small hit. (More likely, it will be an unnoticable overhead. But I'm still to measure that properly.)
+## How does it work?
+
+`react-native-compressed-jsbundle` provides:
+
+- a script that automatically compresses your `.jsbundle` using the fast and compact Brotli algorithm;
+- a custom `.jsbundle` loader that uncompresses the `.jsbundle` (at ~350MB/s) at app launch.
+
+## Installation
+
+### iOS
+
+Add the library a dependency:
+
+```shell
+$ yarn add react-native-compressed-jsbundle
+```
+
+Open your Xcode project and modify the React Native build phase (“Bundle React Native code and images”):
+
+```(shell)
+export NODE_BINARY=node
+../node_modules/react-native/packager/react-native-xcode.sh
+
+# :: Add this line below ::
+../node_modules/react-native-compressed-jsbundle/tool/compress-xcode.sh 
+# :::::::::::::::::::::::::
+```
+
+Open `AppDelegate.m` and add the following:
+
+```(objectivec)
+// 1. Add the new import directive below other imports.
+#import <react-native-compressed-jsbundle/IMOCompressedBundleLoader.h>
+
+@implementation AppDelegate
+
+/// ...snip snip snip...
+
+// 2. Add the following lines below other methods:
+- (void)loadSourceForBridge:(RCTBridge *)bridge onProgress:(RCTSourceLoadProgressBlock)onProgress onComplete:(RCTSourceLoadBlock)loadCallback {
+  [IMOCompressedBundleLoader loadSourceForBridge:bridge bridgeDelegate:self onProgress:onProgress onComplete:loadCallback];
+}
+
+@end
+```
+
+You are good to go.
+
+## Performance
+
+This libary does add a bit of time to app startup due to the decompression step. However, it is quite small. I have
+included some simple low-overhead tracing in the library, so you can see for yourself whether the tradeoff is
+acceptable. Build your app in Release mode on your device and look into the Xcode console.
+
+The `example` project gives a following trace on my iPhone XS:
+

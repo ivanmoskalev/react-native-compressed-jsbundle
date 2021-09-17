@@ -3,64 +3,94 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20ECAEA422EE7FAE8143FC44 /* libPods-Example-Hermes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C29018F5A18D7FA9CE39695 /* libPods-Example-Hermes.a */; };
+		AAE1998F8217D79547251D46 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C347A399DDF3880A871882FC /* libPods-Example.a */; };
+		B16B91B626F4CE0000CD1A96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B182E10C26ECB12E00F1BE00 /* AppDelegate.m */; };
+		B16B91B726F4CE0000CD1A96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B182E10A26ECB12E00F1BE00 /* main.m */; };
+		B16B91BB26F4CE0000CD1A96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B182E10826ECB12E00F1BE00 /* LaunchScreen.storyboard */; };
+		B16B91BC26F4CE0000CD1A96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B182E10B26ECB12E00F1BE00 /* Images.xcassets */; };
+		B16B924226F4DE0100CD1A96 /* Smoketests.m in Sources */ = {isa = PBXBuildFile; fileRef = B16B924126F4DE0100CD1A96 /* Smoketests.m */; };
+		B16B925D26F4E11A00CD1A96 /* Smoketests.m in Sources */ = {isa = PBXBuildFile; fileRef = B16B924126F4DE0100CD1A96 /* Smoketests.m */; };
 		B182E10E26ECB12E00F1BE00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B182E10826ECB12E00F1BE00 /* LaunchScreen.storyboard */; };
 		B182E10F26ECB12E00F1BE00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B182E10A26ECB12E00F1BE00 /* main.m */; };
 		B182E11026ECB12E00F1BE00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B182E10B26ECB12E00F1BE00 /* Images.xcassets */; };
 		B182E11126ECB12E00F1BE00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B182E10C26ECB12E00F1BE00 /* AppDelegate.m */; };
-		D34BED3777622B68E336D8C9 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0DA635B99BBC107FA303A1 /* libPods-Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+		B16B925226F4E11500CD1A96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = ReactNativeCompressedJsbundleExample;
+			remoteInfo = Example;
+		};
+		B16B925926F4E11A00CD1A96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B16B91B226F4CE0000CD1A96;
+			remoteInfo = "Example-Hermes";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1172626FD82B50406EC37522 /* Pods-ReactNativeCompressedJsbundleExample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeCompressedJsbundleExample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeCompressedJsbundleExample-tvOSTests/Pods-ReactNativeCompressedJsbundleExample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		47F7ED3B7971BE374F7B8635 /* Pods-ReactNativeCompressedJsbundleExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeCompressedJsbundleExample.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeCompressedJsbundleExample/Pods-ReactNativeCompressedJsbundleExample.debug.xcconfig"; sourceTree = "<group>"; };
-		6F6A20A3A2D31400635C17C3 /* libPods-ReactNativeCompressedJsbundleExample-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeCompressedJsbundleExample-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A589C4BE8E1DF5F5715191F /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9456A199ABCF36F98EE615D0 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		AE69546072F7DC475F196F4C /* Pods-ReactNativeCompressedJsbundleExample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeCompressedJsbundleExample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeCompressedJsbundleExample-tvOS/Pods-ReactNativeCompressedJsbundleExample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2C29018F5A18D7FA9CE39695 /* libPods-Example-Hermes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example-Hermes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3113BFA25090EBFF6CA438D5 /* Pods-Example-Hermes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-Hermes.release.xcconfig"; path = "Target Support Files/Pods-Example-Hermes/Pods-Example-Hermes.release.xcconfig"; sourceTree = "<group>"; };
+		67DF98A7D1310276269B23B0 /* Pods-Example-Hermes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-Hermes.debug.xcconfig"; path = "Target Support Files/Pods-Example-Hermes/Pods-Example-Hermes.debug.xcconfig"; sourceTree = "<group>"; };
+		AD975EFB4D07DB5A1D3A40B3 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		B16B91C226F4CE0000CD1A96 /* Example-Hermes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-Hermes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16B91C326F4CE0000CD1A96 /* Example-Hermes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Example-Hermes-Info.plist"; path = "/Users/imo/Documents/code/ivanmoskalev/react-native-compressed-jsbundle/example/ios/Example-Hermes-Info.plist"; sourceTree = "<absolute>"; };
+		B16B923F26F4DE0100CD1A96 /* Smoketests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Smoketests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16B924126F4DE0100CD1A96 /* Smoketests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Smoketests.m; sourceTree = "<group>"; };
+		B16B924326F4DE0100CD1A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16B926326F4E11A00CD1A96 /* Smoketests-Hermes.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smoketests-Hermes.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16B926426F4E11A00CD1A96 /* Smoketests-Hermes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Smoketests-Hermes-Info.plist"; path = "/Users/imo/Documents/code/ivanmoskalev/react-native-compressed-jsbundle/example/ios/Smoketests-Hermes-Info.plist"; sourceTree = "<absolute>"; };
 		B182E10826ECB12E00F1BE00 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B182E10926ECB12E00F1BE00 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B182E10A26ECB12E00F1BE00 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B182E10B26ECB12E00F1BE00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B182E10C26ECB12E00F1BE00 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B182E10D26ECB12E00F1BE00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B56BA239C969F702C63633C7 /* libPods-ReactNativeCompressedJsbundleExample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeCompressedJsbundleExample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E00ACF0FDA8BF921659E2F9A /* Pods-ReactNativeCompressedJsbundleExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeCompressedJsbundleExample.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeCompressedJsbundleExample/Pods-ReactNativeCompressedJsbundleExample.release.xcconfig"; sourceTree = "<group>"; };
-		E88D904CC5F3CC947B01AB46 /* Pods-ReactNativeCompressedJsbundleExample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeCompressedJsbundleExample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeCompressedJsbundleExample-tvOS/Pods-ReactNativeCompressedJsbundleExample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		EA0DA635B99BBC107FA303A1 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C347A399DDF3880A871882FC /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		FFD6887008BEF5F1A6973F45 /* Pods-ReactNativeCompressedJsbundleExample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeCompressedJsbundleExample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeCompressedJsbundleExample-tvOSTests/Pods-ReactNativeCompressedJsbundleExample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6E0998B7E3DC13416846B22 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00E356EB1AD99517003FC87E /* Frameworks */ = {
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE1998F8217D79547251D46 /* libPods-Example.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16B91B826F4CE0000CD1A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20ECAEA422EE7FAE8143FC44 /* libPods-Example-Hermes.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16B923C26F4DE0100CD1A96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+		B16B925E26F4E11A00CD1A96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34BED3777622B68E336D8C9 /* libPods-Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,9 +102,8 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				B56BA239C969F702C63633C7 /* libPods-ReactNativeCompressedJsbundleExample-tvOS.a */,
-				6F6A20A3A2D31400635C17C3 /* libPods-ReactNativeCompressedJsbundleExample-tvOSTests.a */,
-				EA0DA635B99BBC107FA303A1 /* libPods-Example.a */,
+				C347A399DDF3880A871882FC /* libPods-Example.a */,
+				2C29018F5A18D7FA9CE39695 /* libPods-Example-Hermes.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -82,14 +111,10 @@
 		6B9684456A2045ADE5A6E47E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				47F7ED3B7971BE374F7B8635 /* Pods-ReactNativeCompressedJsbundleExample.debug.xcconfig */,
-				E00ACF0FDA8BF921659E2F9A /* Pods-ReactNativeCompressedJsbundleExample.release.xcconfig */,
-				AE69546072F7DC475F196F4C /* Pods-ReactNativeCompressedJsbundleExample-tvOS.debug.xcconfig */,
-				E88D904CC5F3CC947B01AB46 /* Pods-ReactNativeCompressedJsbundleExample-tvOS.release.xcconfig */,
-				FFD6887008BEF5F1A6973F45 /* Pods-ReactNativeCompressedJsbundleExample-tvOSTests.debug.xcconfig */,
-				1172626FD82B50406EC37522 /* Pods-ReactNativeCompressedJsbundleExample-tvOSTests.release.xcconfig */,
-				8A589C4BE8E1DF5F5715191F /* Pods-Example.debug.xcconfig */,
-				9456A199ABCF36F98EE615D0 /* Pods-Example.release.xcconfig */,
+				F6E0998B7E3DC13416846B22 /* Pods-Example.debug.xcconfig */,
+				AD975EFB4D07DB5A1D3A40B3 /* Pods-Example.release.xcconfig */,
+				67DF98A7D1310276269B23B0 /* Pods-Example-Hermes.debug.xcconfig */,
+				3113BFA25090EBFF6CA438D5 /* Pods-Example-Hermes.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -106,9 +131,12 @@
 			children = (
 				B182E10726ECB12E00F1BE00 /* Example */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				B16B924026F4DE0100CD1A96 /* Smoketests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				6B9684456A2045ADE5A6E47E /* Pods */,
+				B16B91C326F4CE0000CD1A96 /* Example-Hermes-Info.plist */,
+				B16B926426F4E11A00CD1A96 /* Smoketests-Hermes-Info.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -119,9 +147,20 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* Example.app */,
-				00E356EE1AD99517003FC87E /* ExampleTests.xctest */,
+				B16B91C226F4CE0000CD1A96 /* Example-Hermes.app */,
+				B16B923F26F4DE0100CD1A96 /* Smoketests.xctest */,
+				B16B926326F4E11A00CD1A96 /* Smoketests-Hermes.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B16B924026F4DE0100CD1A96 /* Smoketests */ = {
+			isa = PBXGroup;
+			children = (
+				B16B924126F4DE0100CD1A96 /* Smoketests.m */,
+				B16B924326F4DE0100CD1A96 /* Info.plist */,
+			);
+			path = Smoketests;
 			sourceTree = "<group>";
 		};
 		B182E10726ECB12E00F1BE00 /* Example */ = {
@@ -140,35 +179,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ExampleTests" */;
-			buildPhases = (
-				00E356EA1AD99517003FC87E /* Sources */,
-				00E356EB1AD99517003FC87E /* Frameworks */,
-				00E356EC1AD99517003FC87E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00E356F51AD99517003FC87E /* PBXTargetDependency */,
-			);
-			name = ExampleTests;
-			productName = ReactNativeCompressedJsbundleExampleTests;
-			productReference = 00E356EE1AD99517003FC87E /* ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		13B07F861A680F5B00A75B9A /* Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
-				4F0A6FC082772762E3E4C96C /* [CP] Check Pods Manifest.lock */,
-				FD10A7F022414F080027D42C /* Start Packager */,
+				121D152E2B3E537BF1D0E41E /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				C1D60D28B925C94BD88E79D7 /* [CP] Copy Pods Resources */,
+				8D9D924791838F4FE1D97F63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,6 +199,63 @@
 			productReference = 13B07F961A680F5B00A75B9A /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B16B91B226F4CE0000CD1A96 /* Example-Hermes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B16B91BF26F4CE0000CD1A96 /* Build configuration list for PBXNativeTarget "Example-Hermes" */;
+			buildPhases = (
+				9807412D5D17F47EB2D42FD8 /* [CP] Check Pods Manifest.lock */,
+				B16B91B526F4CE0000CD1A96 /* Sources */,
+				B16B91B826F4CE0000CD1A96 /* Frameworks */,
+				B16B91BA26F4CE0000CD1A96 /* Resources */,
+				B16B91BD26F4CE0000CD1A96 /* Bundle React Native code and images */,
+				B0D0EDBF460EF78256E951D6 /* [CP] Embed Pods Frameworks */,
+				8AABDBE646CE23A7C0348A21 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Example-Hermes";
+			productName = ReactNativeCompressedJsbundleExample;
+			productReference = B16B91C226F4CE0000CD1A96 /* Example-Hermes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B16B923E26F4DE0100CD1A96 /* Smoketests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B16B924626F4DE0100CD1A96 /* Build configuration list for PBXNativeTarget "Smoketests" */;
+			buildPhases = (
+				B16B923B26F4DE0100CD1A96 /* Sources */,
+				B16B923C26F4DE0100CD1A96 /* Frameworks */,
+				B16B923D26F4DE0100CD1A96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B16B925326F4E11500CD1A96 /* PBXTargetDependency */,
+			);
+			name = Smoketests;
+			productName = Smoketests;
+			productReference = B16B923F26F4DE0100CD1A96 /* Smoketests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B16B925726F4E11A00CD1A96 /* Smoketests-Hermes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B16B926026F4E11A00CD1A96 /* Build configuration list for PBXNativeTarget "Smoketests-Hermes" */;
+			buildPhases = (
+				B16B925C26F4E11A00CD1A96 /* Sources */,
+				B16B925E26F4E11A00CD1A96 /* Frameworks */,
+				B16B925F26F4E11A00CD1A96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B16B925826F4E11A00CD1A96 /* PBXTargetDependency */,
+			);
+			name = "Smoketests-Hermes";
+			productName = Smoketests;
+			productReference = B16B926326F4E11A00CD1A96 /* Smoketests-Hermes.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -187,12 +264,15 @@
 			attributes = {
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
-					00E356ED1AD99517003FC87E = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					B16B923E26F4DE0100CD1A96 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					B16B925726F4E11A00CD1A96 = {
+						TestTargetID = B16B91B226F4CE0000CD1A96;
 					};
 				};
 			};
@@ -210,25 +290,43 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* Example */,
-				00E356ED1AD99517003FC87E /* ExampleTests */,
+				B16B91B226F4CE0000CD1A96 /* Example-Hermes */,
+				B16B923E26F4DE0100CD1A96 /* Smoketests */,
+				B16B925726F4E11A00CD1A96 /* Smoketests-Hermes */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00E356EC1AD99517003FC87E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B182E10E26ECB12E00F1BE00 /* LaunchScreen.storyboard in Resources */,
 				B182E11026ECB12E00F1BE00 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16B91BA26F4CE0000CD1A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16B91BB26F4CE0000CD1A96 /* LaunchScreen.storyboard in Resources */,
+				B16B91BC26F4CE0000CD1A96 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16B923D26F4DE0100CD1A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16B925F26F4E11A00CD1A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,9 +345,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -eo pipefail\n\nexport NODE_BINARY=node\nexport FORCE_BUNDLING=true\n\n../node_modules/react-native/scripts/react-native-xcode.sh\n\n$NODE_BINARY ../node_modules/@ivanmoskalev/react-native-compressed-jsbundle/tool/compress.js \"$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/main.jsbundle\"\n";
+			shellScript = "export NODE_BINARY=node\nexport FORCE_BUNDLING=true\n\n../node_modules/react-native/scripts/react-native-xcode.sh\n../node_modules/react-native-compressed-jsbundle/tool/compress-xcode.sh\n";
 		};
-		4F0A6FC082772762E3E4C96C /* [CP] Check Pods Manifest.lock */ = {
+		121D152E2B3E537BF1D0E41E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,14 +369,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C1D60D28B925C94BD88E79D7 /* [CP] Copy Pods Resources */ = {
+		8AABDBE646CE23A7C0348A21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example-Hermes/Pods-Example-Hermes-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core.common-Hermes/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example-Hermes/Pods-Example-Hermes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D9D924791838F4FE1D97F63 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core.common/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -289,7 +405,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD10A7F022414F080027D42C /* Start Packager */ = {
+		9807412D5D17F47EB2D42FD8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,27 +413,55 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Start Packager";
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-Hermes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0D0EDBF460EF78256E951D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example-Hermes/Pods-Example-Hermes-frameworks.sh",
+				"${PODS_ROOT}/hermes-engine/destroot/Library/Frameworks/iphoneos/hermes.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example-Hermes/Pods-Example-Hermes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B16B91BD26F4CE0000CD1A96 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "exit 0\n\nexport RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
-			showEnvVarsInLog = 0;
+			shellScript = "export NODE_BINARY=node\nexport FORCE_BUNDLING=true\n\n../node_modules/react-native/scripts/react-native-xcode.sh\n../node_modules/react-native-compressed-jsbundle/tool/compress-xcode.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00E356EA1AD99517003FC87E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F871A680F5B00A75B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,68 +471,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B16B91B526F4CE0000CD1A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16B91B626F4CE0000CD1A96 /* AppDelegate.m in Sources */,
+				B16B91B726F4CE0000CD1A96 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16B923B26F4DE0100CD1A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16B924226F4DE0100CD1A96 /* Smoketests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16B925C26F4E11A00CD1A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16B925D26F4E11A00CD1A96 /* Smoketests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+		B16B925326F4E11500CD1A96 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 13B07F861A680F5B00A75B9A /* Example */;
-			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+			targetProxy = B16B925226F4E11500CD1A96 /* PBXContainerItemProxy */;
+		};
+		B16B925826F4E11A00CD1A96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = B16B91B226F4CE0000CD1A96 /* Example-Hermes */;
+			targetProxy = B16B925926F4E11A00CD1A96 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00E356F61AD99517003FC87E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ReactNativeCompressedJsbundleExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-					"$(inherited)",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ivanmoskalevreactnativecompressedjsbundle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeCompressedJsbundleExample.app/ReactNativeCompressedJsbundleExample";
-			};
-			name = Debug;
-		};
-		00E356F71AD99517003FC87E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = ReactNativeCompressedJsbundleExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-					"$(inherited)",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ivanmoskalevreactnativecompressedjsbundle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeCompressedJsbundleExample.app/ReactNativeCompressedJsbundleExample";
-			};
-			name = Release;
-		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A589C4BE8E1DF5F5715191F /* Pods-Example.debug.xcconfig */;
+			baseConfigurationReference = F6E0998B7E3DC13416846B22 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -404,13 +543,17 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9456A199ABCF36F98EE615D0 /* Pods-Example.release.xcconfig */;
+			baseConfigurationReference = AD975EFB4D07DB5A1D3A40B3 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -471,7 +614,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
@@ -524,7 +670,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
@@ -536,18 +685,185 @@
 			};
 			name = Release;
 		};
+		B16B91C026F4CE0000CD1A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67DF98A7D1310276269B23B0 /* Pods-Example-Hermes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Example-Hermes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanmoskalev.oss.react-native-compressed-jsbundle.example-hermes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		B16B91C126F4CE0000CD1A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3113BFA25090EBFF6CA438D5 /* Pods-Example-Hermes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = "Example-Hermes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanmoskalev.oss.react-native-compressed-jsbundle.example-hermes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		B16B924426F4DE0100CD1A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 55XJC24EES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Smoketests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanmoskalev.react-native-compressed-jsbundle.Smoketests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Example;
+			};
+			name = Debug;
+		};
+		B16B924526F4DE0100CD1A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 55XJC24EES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Smoketests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanmoskalev.react-native-compressed-jsbundle.Smoketests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Example;
+			};
+			name = Release;
+		};
+		B16B926126F4E11A00CD1A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 55XJC24EES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Smoketests-Hermes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanmoskalev.react-native-compressed-jsbundle.Smoketests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Example-Hermes";
+			};
+			name = Debug;
+		};
+		B16B926226F4E11A00CD1A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 55XJC24EES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Smoketests-Hermes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanmoskalev.react-native-compressed-jsbundle.Smoketests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Example-Hermes";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00E356F61AD99517003FC87E /* Debug */,
-				00E356F71AD99517003FC87E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -562,6 +878,33 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B16B91BF26F4CE0000CD1A96 /* Build configuration list for PBXNativeTarget "Example-Hermes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B16B91C026F4CE0000CD1A96 /* Debug */,
+				B16B91C126F4CE0000CD1A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B16B924626F4DE0100CD1A96 /* Build configuration list for PBXNativeTarget "Smoketests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B16B924426F4DE0100CD1A96 /* Debug */,
+				B16B924526F4DE0100CD1A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B16B926026F4E11A00CD1A96 /* Build configuration list for PBXNativeTarget "Smoketests-Hermes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B16B926126F4E11A00CD1A96 /* Debug */,
+				B16B926226F4E11A00CD1A96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

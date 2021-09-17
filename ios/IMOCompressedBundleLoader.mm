@@ -1,5 +1,6 @@
 #import "IMOCompressedBundleLoader.h"
 #import "BrotliUtil.h"
+#import "TraceUtil.h"
 #import "IMOReactSource.h"
 
 #define FALLBACK_TO_DEFAULT_LOADER()             \
@@ -37,12 +38,7 @@
         return;
     }
     
-    CFTimeInterval endTime = CACurrentMediaTime();
-    NSLog(@"[@ivanmoskalev/react-native-compressed-jsbundle] Decompression time overhead: %g s\nCompressed size: %lu bytes\nDecompressed size: %ld bytes\nBackend: brotli",
-          endTime - startTime,
-          (unsigned long)compressedData.length,
-          (unsigned long)decompressedData.length
-          );
+    IMOTraceDecompressionPerformance(startTime, compressedData.length, decompressedData.length);
 
     RCTSource *source = [IMOReactSource sourceWithUrl:sourceUrl data:decompressedData];
     loadCallback(nil, source);

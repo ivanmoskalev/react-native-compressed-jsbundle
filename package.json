@@ -1,17 +1,17 @@
 {
-  "name": "@ivanmoskalev/react-native-compressed-jsbundle",
+  "name": "react-native-compressed-jsbundle",
   "version": "0.1.0",
-  "description": "Ship compressed JS bundles in your React Native apps",
+  "description": "Ship Brotli-compressed JS bundles in your React Native apps",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
   "react-native": "src/index",
   "source": "src/index",
   "files": [
-    "android",
     "ios",
     "react-native-compressed-jsbundle.podspec",
     "tool/compress.js",
+    "tool/compress-xcode.sh",
     "!android/build",
     "!ios/build"
   ],
@@ -26,7 +26,9 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "brotli",
+    "compression"
   ],
   "repository": "https://github.com/ivanmoskalev/react-native-compressed-jsbundle",
   "author": "Ivan Moskalev <ivan.moskalev@gmail.com> (https://github.com/ivanmoskalev)",
