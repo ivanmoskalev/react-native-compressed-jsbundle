@@ -24,7 +24,6 @@ jobs:
           TEST_PLATFORM: ${{ 'iOS Simulator' }}
         run: |
           set -eo pipefail
-          set -x
-          yarn install
+          yarn bootstrap
           TEST_DEVICE=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}'`
           cd example/ios && xcodebuild test -scheme "$TEST_SCHEME" -destination "platform=$TEST_PLATFORM,name=$TEST_DEVICE"
