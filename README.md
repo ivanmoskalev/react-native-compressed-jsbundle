@@ -30,7 +30,7 @@ $ yarn add react-native-compressed-jsbundle
 
 Open your Xcode project and modify the React Native build phase (“Bundle React Native code and images”):
 
-```(shell)
+```shell
 export NODE_BINARY=node
 ../node_modules/react-native/packager/react-native-xcode.sh
 
@@ -41,15 +41,15 @@ export NODE_BINARY=node
 
 Open `AppDelegate.m` and add the following:
 
-```(objectivec)
-// 1. Add the new import directive below other imports.
+```objectivec
+// 2. Add the new import directive below other imports.
 #import <react-native-compressed-jsbundle/IMOCompressedBundleLoader.h>
 
 @implementation AppDelegate
 
-/// ...snip snip snip...
+// Other methods
 
-// 2. Add the following lines below other methods:
+// 3. Add the following lines below other methods:
 - (void)loadSourceForBridge:(RCTBridge *)bridge onProgress:(RCTSourceLoadProgressBlock)onProgress onComplete:(RCTSourceLoadBlock)loadCallback {
   [IMOCompressedBundleLoader loadSourceForBridge:bridge bridgeDelegate:self onProgress:onProgress onComplete:loadCallback];
 }
@@ -61,9 +61,8 @@ You are good to go.
 
 ## Performance
 
-This libary does add a bit of time to app startup due to the decompression step. However, it is quite small. I have
-included some simple low-overhead tracing in the library, so you can see for yourself whether the tradeoff is
-acceptable. Build your app in Release mode on your device and look into the Xcode console.
+This libary does add a bit of time to app startup due to the decompression step. However, it is quite small – around **50ms for a 5 MB `.jsbundle`**. 
 
-The `example` project gives a following trace on my iPhone XS:
+I have included some simple low-overhead tracing in the library, so you can see for yourself whether the tradeoff is
+acceptable. Build your app in Release mode on your device and look into the Xcode console.
 
