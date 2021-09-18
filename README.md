@@ -15,8 +15,8 @@ automatically uncompresses the `.jsbundle` on the fly.
 
 `react-native-compressed-jsbundle` provides:
 
-- a script that automatically compresses your `.jsbundle` using the fast and compact Brotli algorithm;
-- a custom `.jsbundle` loader that uncompresses the `.jsbundle` (at ~350MB/s) at app launch.
+- A script that automatically compresses your `.jsbundle` using the fast and compact Brotli algorithm;
+- a custom `.jsbundle` loader that uncompresses the `.jsbundle` (at ~350MB/s) at app launch. The loader uses standard mechanisms for loading customization that React Native provides.
 
 ## Installation
 
