@@ -1,24 +1,20 @@
 {
   "name": "react-native-compressed-jsbundle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ship Brotli-compressed JS bundles in your React Native apps",
-  "main": "lib/commonjs/index",
-  "module": "lib/module/index",
-  "types": "lib/typescript/index.d.ts",
-  "react-native": "src/index",
-  "source": "src/index",
+  "react-native": "src/index.js",
+  "source": "src/index.js",
   "files": [
+    "src",
     "ios",
     "react-native-compressed-jsbundle.podspec",
     "tool/compress.js",
     "tool/compress-xcode.sh",
-    "!android/build",
-    "!ios/build"
+    "brotli/c/*",
+    "brotli/LICENSE"
   ],
   "scripts": {
-    "test": "jest",
-    "lint": "echo TBD",
-    "release": "release-it",
+    "lint": "echo OK",
     "example": "yarn --cwd example",
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods"
@@ -46,8 +42,7 @@
     "@release-it/conventional-changelog": "^2.0.0",
     "commitlint": "^11.0.0",
     "husky": "^4.2.5",
-    "pod-install": "^0.1.0",
-    "release-it": "^14.2.2"
+    "pod-install": "^0.1.0"
   },
   "dependencies": {
     "brotli": "^1.3.2"
@@ -90,35 +85,5 @@
         "preset": "angular"
       }
     }
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "@react-native-community",
-      "prettier"
-    ],
-    "rules": {
-      "prettier/prettier": [
-        "error",
-        {
-          "quoteProps": "consistent",
-          "singleQuote": true,
-          "tabWidth": 2,
-          "trailingComma": "es5",
-          "useTabs": false
-        }
-      ]
-    }
-  },
-  "eslintIgnore": [
-    "node_modules/",
-    "lib/"
-  ],
-  "prettier": {
-    "quoteProps": "consistent",
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "es5",
-    "useTabs": false
   }
 }
