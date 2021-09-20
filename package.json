@@ -1,6 +1,6 @@
 {
   "name": "react-native-compressed-jsbundle",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Ship Brotli-compressed JS bundles in your React Native apps",
   "react-native": "src/index.js",
   "source": "src/index.js",
