@@ -60,7 +60,7 @@ You are good to go.
 
 ## Performance
 
-This libary does add a bit of time to app startup due to the decompression step. However, it is quite small – around **50ms for a 5 MB `.jsbundle`**. 
+This libary does add a bit of time to app startup due to the decompression step. However, it is quite small – around **20ms for a 5 MB `.jsbundle`**. 
 
 I have included some simple low-overhead tracing in the library, so you can see for yourself whether the tradeoff is
 acceptable. Build your app in Release mode on your device and look into the Xcode console.
