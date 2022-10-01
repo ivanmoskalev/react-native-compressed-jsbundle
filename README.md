@@ -4,7 +4,7 @@
 
 Sometimes you need a very small `.app`, for example if you are building
 an [App Clip](https://developer.apple.com/app-clips/). (App Clips have to be strictly less than 10 MB in their _
-uncompressed_ form.)
+uncompressed_ form. The limit was increased to 15 MB with iOS 16+)
 
 When you distribute your React Native app, JavaScript code gets bundled into a `.jsbundle` file. It can get quite large.
 
